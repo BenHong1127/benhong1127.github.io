@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>GTM & Groundhog 測試頁面</title>
+
+    <!-- 1. 貼入你的 GTM Head 代碼 -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5XWFCGCT');</script>
+</head>
+<body>
+    <!-- 2. 貼入你的 GTM Body 代碼 -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XWFCGCT"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+    <h1>QE 追蹤測試環境</h1>
+    <p>目前的網址應該會顯示真實的 GitHub Pages URL，不再是亂碼。</p>
+    
+    <button id="test-btn">測試按鈕 (可用於測試 Event Click)</button>
+
+    <script>
+        console.log("頁面已載入，GTM 運行中...");
+    </script>
+</body>
+</html>
